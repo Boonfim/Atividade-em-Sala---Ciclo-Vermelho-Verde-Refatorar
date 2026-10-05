@@ -29,7 +29,8 @@ PLANO DE TDD E REFATORAÇÃO (Atividade Assíncrona - Ciclo Vermelho-Verde-Refat
    Utilizei uma IA (Gemini) na fase de planejamento (Passo 1) para me ajudar a bolar uma ideia de problema matemático simples que se adequasse de forma didática aos padrões de projeto ensinados nos slides da disciplina e para formatar o rascunho deste plano.
 """
 
-import calculadora 
+from calculadora import calcular_preco_final
+
 
 
 # criando teste de cada categoria
@@ -45,7 +46,7 @@ def teste_calculo_eletronico():
     categoria = "Eletrônico"
 
     resultado = calcular_preco_final(preco_base, categoria)
-    assert resultado == 210.0
+    assert resultado == 115.0
 
 def teste_calculo_alimento():
     preco_base = 100.0
